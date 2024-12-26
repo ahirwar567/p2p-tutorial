@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2P Tutoring Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>P2P Tutoring Platform</h1>
+        <div id="user-section">
+            <h2>Register</h2>
+            <select id="user-type">
+                <option value="0">Tutor</option>
+                <option value="1">Student</option>
+            </select>
+            <button onclick="registerUser()">Register</button>
+        </div>
+        <div id="session-section">
+            <h2>Create Session</h2>
+            <input type="text" id="tutor-address" placeholder="Tutor Address">
+            <input type="number" id="session-price" placeholder="Session Price">
+            <button onclick="createSession()">Create Session</button>
+        </div>
+        <div id="complete-section">
+            <h2>Complete Session</h2>
+            <input type="number" id="session-id" placeholder="Session ID">
+            <button onclick="completeSession()">Complete Session</button>
+        </div>
+        <div id="payment-section">
+            <h2>Make Payment</h2>
+            <input type="number" id="payment-session-id" placeholder="Session ID">
+            <button onclick="makePayment()">Make Payment</button>
+        </div>
+        <div id="rate-section">
+            <h2>Rate User</h2>
+            <input type="text" id="rate-user-address" placeholder="User Address">
+            <input type="number" id="rating" placeholder="Rating">
+            <button onclick="rateUser()">Rate User</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
